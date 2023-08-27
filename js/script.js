@@ -62,21 +62,23 @@ document.getElementById('coupon-code').addEventListener('keyup', function (event
 
 document.getElementById('go-home-btn').addEventListener('click', function () {
 
-    const inputFieldValue = document.getElementById('coupon-code');
-    if (inputFieldValue) {
-        inputFieldValue.value = '';
-    }
+    location.reload();
 
-    const purchaseItemsList = document.getElementById('purchase-items-name');
-    if (purchaseItemsList) {
-        purchaseItemsList.innerHTML = '';
-    }
+    // const inputFieldValue = document.getElementById('coupon-code');
+    // if (inputFieldValue) {
+    //     inputFieldValue.value = '';
+    // }
 
-    const priceElementsIds = ['total-price', 'discount-amount', 'grand-total'];
-    for (const id of priceElementsIds) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.textContent = '00';
-        }
-    }
+    // const purchaseItemsList = document.getElementById('purchase-items-name');
+    // if (purchaseItemsList) {
+    //     purchaseItemsList.innerHTML = '';
+    // }
+
+    // const priceElementsIds = ['total-price', 'discount-amount', 'grand-total'];
+    // for (const id of priceElementsIds) {
+    //     const element = document.getElementById(id);
+    //     if (element) {
+    //         element.textContent = '00';
+    //     }
+    // }
 });
